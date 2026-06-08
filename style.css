@@ -1,0 +1,286 @@
+*{
+    margin: 0px;
+    box-sizing: border-box; 
+    font-family: "Special Elite", system-ui;
+}
+body{
+    background-color: #f5f5f5;
+    color: #333;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffff;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+.brand{
+    text-decoration: none;
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+#check{
+    display: none;
+}
+.icons{
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    right: 8%;
+    display: none;
+}
+.navLinks{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.link{
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.6s;
+    font-size: 17px;
+}
+.link:hover{
+    color: brown;
+    transform: scale(1.3);
+}
+.hero{
+    display: flex;
+    padding: 120px 8%;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    
+}
+.heroImage{
+    flex: 1;
+}
+.heroText{
+    flex: 1;
+    animation: fadeIn 1.5s ease;
+}
+#heroTitle{
+    font-size: 45px;
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+#heroPara{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.heroButton{
+    padding: 12px 25px;
+    border: none;
+    background-color: brown;
+    color: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.9s;
+   
+}
+.heroButton:hover{
+    background-color: #000000;
+    transform: scale(1.05);
+}
+#furnitureImage{
+    width: 100%;
+    border-radius: 15px;
+}
+/* products */
+.products{
+    padding: 0px 8% 60px 8%;
+    text-align: center;
+}
+.productHead{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.productContainer{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.card{
+    background-color: white;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 1) ;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+.cardImg{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    /* object-fit: cover; */
+}
+.productName{
+    margin: 15px 0 10px;
+}
+.price{
+    margin-bottom: 10px;
+}
+.banner{
+    margin: 0px 8% 60px 8%;
+    padding: 0px 40px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/vecteezy_modern-loft-design-inspired-by-nature-with-scenic-view_65478698.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    background-attachment: fixed;
+
+}
+.aboutHead{
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #f5f5f5;
+}
+.aboutPara{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+.aboutButton{
+    font-weight: 500;
+    font-size: 19px;
+    background-color: brown;
+}
+.contact{
+    height: 200px;
+    background-color: white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 0px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.contactHead,.subscribeHead{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.contactPh,.contactMail{
+    font-size: 17px;
+    font-weight: 400;
+}
+.socialIcons{
+    margin-top: 20px;
+}
+.smLink{
+    color:black;
+    margin-right: 20px;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+}
+.subInput{
+    padding: 10px;
+    width: 300px;
+}
+.subButton{
+    background-color:brown;
+    color: white;
+}
+.footer{
+    padding: 15px;
+    background-color: #f5f5f5;
+    color: #000000;
+    text-align:center;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+/* Animations */
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+        transform:translateY(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    
+}
+/* responsive style */
+@media (max-width:768px) {
+    /* style for mobile and tablet */
+    .navbar{
+        padding: 20px 4%;
+        font-size: 25px;
+    }
+    .brand,.icons{
+        font-size: 20px;
+    }
+    .icons{
+        display: flex;
+        
+    }
+    #cancelIcon{
+        display: none;
+    }
+    #check:checked~.icons #menuIcon{
+        display: none;
+    }
+    #check:checked~.icons #cancelIcon{
+        display: block;
+    }
+    .navLinks{
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        height: 0px;
+        flex-direction: column;
+        font-size: 20px;
+        display: none;
+    }
+    #check:checked~.navLinks{
+        display: block;
+        height :fit-content;
+        
+    }
+    .links{
+        text-align:center;
+        margin: 1rem 0px;
+    }
+    .link{
+        color: black;
+    }
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    #heroTitle{
+        font-size: 30px;
+    }
+    .banner,.contact{
+        height: fit-content;
+        padding: 20px 8%;
+    }
+}
+

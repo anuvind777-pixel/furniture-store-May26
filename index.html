@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ifurniture</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Jim+Nightshade&family=Special+Elite&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <a class="brand" href="">
+            <i class="fa-solid fa-chair"></i>
+            <span class="brandName">ifurniture</span>
+        </a>
+        <!-- checkbox -->
+         <input type="checkbox" id="check">
+         <!-- label include 2 icons -->
+          <label for="check" class="icons">
+            <!-- menu icon -->
+             <i class="fa-solid fa-bars" id="menuIcon"></i>
+             <!-- .check icon -->
+              <i class="fa-solid fa-xmark" id="cancelIcon"></i>
+          </label>
+        <!-- links -->
+        <ul class="navLinks">
+            <li class="links"><a class="link" href="#home">Home</a></li>
+            <li class="links"><a class="link" href="#products">Products</a></li>
+            <li class="links"><a class="link" href="#about">About</a></li>
+            <li class="links"><a class="link" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- hero section -->
+     <section class="hero" id="home">
+        <!-- ṭext content -->
+         <div class="heroText">
+            <h1 id="heroTitle">Modern Furniture for your home</h1>
+            <p id="heroPara">Discover stylish and comfortable furniture for your living room, bedroom and office</p>
+            <button class="heroButton">Shop Now</button>
+         </div>
+         <!-- image content -->
+         <div class="heroImage">
+            <img id="furnitureImage" src="./img/Futuristic Furniture Set.png" alt="no image">
+         </div>
+     </section>
+    <!-- product section -->
+     <section id="products" class="products">
+        <!-- heading -->
+        <h2 class="productHead">Our Products</h2>
+        <!-- Product Container -->
+         <div class="productContainer">
+            <!-- card1 -->
+            <div class="card">
+                 <!-- image -->
+                  <img class="cardImg" src="./img/Sculptural Wooden Chair.png" alt="">
+                 <!-- product name -->
+                  <h3 class="ProductName"> Wooden Chair</h3>
+                 <!-- price -->
+                  <p class="price">$120</p>
+                 <!--button  -->
+                 <button class="heroButton">Buy Now</button>
+            </div>
+            <!--card2  -->
+            <div class="card">
+                 <!-- image -->
+                  <img class="cardImg" src="./img/Modern Minimalist Dining Area.png" alt="">
+                 <!-- product name -->
+                  <h3 class="ProductName"> Dining Table</h3>
+                 <!-- price -->
+                  <p class="price">$220</p>
+                 <!--button  -->
+                 <button class="heroButton">Buy Now</button>
+            </div>
+            
+            <!-- card3 -->
+             <div class="card">
+                 <!-- image -->
+                  <img class="cardImg" src="./img/Modern Interior Lounge.png" alt="">
+                 <!-- product name -->
+                  <h3 class="ProductName">Sofa</h3>
+                 <!-- price -->
+                  <p class="price">$140</p>
+                 <!--button  -->
+                 <button class="heroButton">Buy Now</button>
+            </div>
+         </div>
+
+     </section>
+    <!-- banner -->
+     <section id="about" class="banner">
+        <h2 class="aboutHead">About Us</h2>
+
+        <p class="aboutPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam impedit delectus, magnam porro odio, officia aliquid, tempore eaque provident quasi laborum nulla voluptatum aspernatur sunt doloribus eum. Vel, maxime perferendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, assumenda, quo eius ex quisquam quidem rem hic est atque, mollitia magnam doloremque saepe laudantium enim deleniti commodi amet officia quod?</p>
+        <button class="heroButton aboutButton">Let's Talk</button>
+     </section>
+    <!-- footer -->
+     <section id="contact" class="contact">
+        <!-- contact div -->       
+            <!-- contact text -->
+             <div class="contactText">
+                <h3 class="contactHead">Contact Us</h3>
+                <h4 class="contactPh">+91-9876543210</h4>
+                <p class="contactMail">info@gmail.com</p>
+                <!-- icons -->
+                 <div class="socialIcons">
+                    <a class="smLink" target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="smLink" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="smLink" target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                 </div>
+             </div>
+             <!-- subscribe -->
+              
+              <div class="box">
+                <h3 class="subscribeHead">Join Our Mail List</h3>
+                <input type="text" placeholder="Email" class="subInput">
+                <button class="subButton">Subscribe</button>
+              </div>
+     </section>
+      <!-- footer -->
+          <footer class="footer">
+            <p>&copy;May 2026 Design by LuminarTechnolab, All Rights Reserved</p>
+            
+          </footer>
+</body>
+
+</html>
