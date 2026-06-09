@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Felipa&family=Jim+Nightshade&family=Special+Elite&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -51,7 +53,9 @@
             <button class="heroButton">Shop Now</button>
          </div>
          <!-- image content -->
-         <div class="heroImage">
+         <div data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" data-aos-duration="2000"  class="heroImage">
             <img id="furnitureImage" src="./img/Futuristic Furniture Set.png" alt="no image">
          </div>
      </section>
@@ -134,5 +138,10 @@
             
           </footer>
 </body>
-
+<!-- AOS animation cdn script link -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- AOS initialization -->
+<script>
+  AOS.init();
+</script>
 </html>
